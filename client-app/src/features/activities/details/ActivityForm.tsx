@@ -8,7 +8,6 @@ interface IProps {
     createActivity: (activity: IActivity) => void;
     editActivity: (activity: IActivity) => void;
 }
-
 export const ActivityForm: React.FC<IProps> = ({ setEditMode, activity: initialFormState, createActivity, editActivity }) => {
     const intitializeForm = () => {
         if (initialFormState)
