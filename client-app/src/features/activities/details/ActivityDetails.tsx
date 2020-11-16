@@ -1,6 +1,7 @@
 import React from 'react'
 import { Card, Image, Button } from 'semantic-ui-react'
 import { IActivity } from '../../../app/modules/activity'
+//interface
 interface IProps {
   activity: IActivity
   setEditMode: (editMode: boolean) => void;
