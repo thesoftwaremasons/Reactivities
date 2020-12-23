@@ -4,9 +4,10 @@ import { IActivity } from '../../../app/modules/activity'
 import { v4 as uuid } from 'uuid'
 interface IProps {
     setEditMode: (editMode: boolean) => void;
-    activity: IActivity,
+    activity: IActivity;
     createActivity: (activity: IActivity) => void;
     editActivity: (activity: IActivity) => void;
+    submitting: Boolean
 }
 export const ActivityForm: React.FC<IProps> = ({ setEditMode, activity: initialFormState, createActivity, editActivity }) => {
     const intitializeForm = () => {
